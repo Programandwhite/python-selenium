@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time,os
 
 class Base(object):
+
     def __init__(self,driver):
         '''启动浏览器参数化'''
         self.driver=driver

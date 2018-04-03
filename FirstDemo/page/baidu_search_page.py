@@ -17,6 +17,7 @@ class baidu_search_page(Base):
         self.click(self.button)
 
 
+
 # if __name__ == "__main__":
 #     from selenium import webdriver
 #     driver = webdriver.Chrome()

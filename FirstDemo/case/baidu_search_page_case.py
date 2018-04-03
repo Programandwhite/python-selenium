@@ -30,6 +30,8 @@ class baidu_search_page_case(baseCase):
 
         # 调用登录方法
         self.search_baidu02(data["value"])
+        self.logger.info("调试成功")
+
 
 
 
