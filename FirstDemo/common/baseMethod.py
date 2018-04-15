@@ -18,12 +18,12 @@ class Base(object):
         self.driver.maximize_window()
 
     def find_element(self,locator):
-        '''定位元素，参数locator是元祖类型'''
+        '''定位元素，参数locator是元组类型'''
         try:
             element=WebDriverWait(self.driver,10,0.5).until(EC.presence_of_element_located(locator))
             return element
         except:
-            print("没有周到此%s元素"%locator)
+            print("没有找到此%s元素"%locator)
 
     def find_elements(self, locator):
         '''定位一组元素'''
