@@ -17,10 +17,10 @@ class Base(object):
         self.driver.get(url)
         self.driver.maximize_window()
 
-    def find_element(self,locator):
+    def find_element(self,*locator):
         '''定位元素，参数locator是元组类型'''
         try:
-            element=WebDriverWait(self.driver,10,0.5).until(EC.presence_of_element_located(locator))
+            element=WebDriverWait(self.driver,10,0.5).until(EC.presence_of_element_located(*locator))
             return element
         except:
             print("没有找到此%s元素"%locator)
