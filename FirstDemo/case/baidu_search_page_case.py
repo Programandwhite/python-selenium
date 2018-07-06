@@ -6,11 +6,11 @@ from case.baseCase import baseCase
 import ddt
 from common.read_excel import read_Excel
 
-filePath = r"E:\pyworkpase\FirstDemo\testdata.xlsx"
-sheetName = "Sheet1"
-data = read_Excel(filePath, sheetName)
-testData = data.dict_data()
-print(testData)
+# filePath = r"E:\pyworkpase\FirstDemo\testdata.xlsx"
+# sheetName = "Sheet1"
+# data = read_Excel(filePath, sheetName)
+# testData = data.dict_data()
+# print(testData)
 
 #@ddt.ddt
 class baidu_search_page_case(baseCase):
